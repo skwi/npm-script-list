@@ -1,0 +1,25 @@
+{
+  "name": "npm-script-list",
+  "description": "A CLI tool to list available NPM scripts",
+  "keywords": [
+    "npm",
+    "script",
+    "list"
+  ],
+  "author": "Cédric Spalvieri <cedric@skwi.fr>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "maintainers": [
+    "Cédric Spalvieri <cedric@skwi.fr>"
+  ],
+  "main": "src/index.js",
+  "bin": {
+    "npm-script-list": "bin/script-list.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0"
+  }
+}
