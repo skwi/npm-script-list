@@ -17,9 +17,14 @@
     "npm-script-list": "bin/script-list.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --bail test/test.js"
   },
   "dependencies": {
     "chalk": "^2.1.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^4.0.2",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2"
   }
 }

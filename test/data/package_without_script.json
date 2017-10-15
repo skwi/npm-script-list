@@ -1,0 +1,6 @@
+{
+  "name": "dummy",
+  "description": "A dummy package to test npm-script-list",
+  "author": "Cédric Spalvieri <cedric@skwi.fr>",
+  "version": "1.0.0"
+}

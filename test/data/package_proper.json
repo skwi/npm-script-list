@@ -1,0 +1,10 @@
+{
+  "name": "dummy",
+  "description": "A dummy package to test npm-script-list",
+  "author": "Cédric Spalvieri <cedric@skwi.fr>",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app/index.js",
+    "install": "node-gyp rebuild"
+  }
+}

@@ -7,18 +7,18 @@ fs.readFile('./package.json', 'utf8', function (err, data) {
 
     if (err) {
         if(err.code === 'ENOENT') {
-            console.error(chalk.red('Unable to find the file "package.json" in the current directory'));
-            process.exit();    
+            process.stdout.write(chalk.red('Unable to find the file "package.json" in the current directory'));
+            process.exit(1);    
         }
-        console.error(chalk.red(err));
-        process.exit();
+        process.stdout.write(chalk.red(err));
+        process.exit(1);
     }
 
     let packageConfig = JSON.parse(data);
 
     if (packageConfig.scripts === undefined) {
-        console.error(chalk.red('No "script" field defined in the "package.json" file'));
-        process.exit();
+        process.stdout.write(chalk.red('No "script" field defined in the "package.json" file'));
+        process.exit(1);
     }
 
     let scripts = packageConfig.scripts;
